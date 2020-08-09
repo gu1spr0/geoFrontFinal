@@ -75,7 +75,6 @@ export class PersonaComponent implements OnInit {
     this.personaService.getPersonasTodos().subscribe(
       res => {
         this.personas = res;
-        console.log(this.personas);
       },
       error => {
         const errorMessage = error;

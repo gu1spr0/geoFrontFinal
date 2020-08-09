@@ -131,6 +131,8 @@ export class UserComponent implements OnInit {
       usuario.valido = 'AC';
       rol.rolId = value.rol;
       usuario.rol = rol;
+      usuario.persona.departamento.departamentoId = 1;
+      console.log(usuario);
       this.guardarUsuario(usuario);
     } else {
       if (this.selectedElement) {

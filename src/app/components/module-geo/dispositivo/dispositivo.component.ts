@@ -30,7 +30,7 @@ export class DispositivoComponent implements OnInit {
     this.dispositivosTodos();
     this.dispositivoForm = this.fb.group({
       nombreDisp: new FormControl({ value: '', disabled: true }, Validators.required),
-      marca: new FormControl('', Validators.required),
+      marca: new FormControl('ARDUINO', Validators.required),
       modelo: new FormControl('', Validators.required),
       descripcion: new FormControl(''),
       subscriber: new FormControl({ value: '', disabled: true }, Validators.required),
